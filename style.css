@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 15px;
+}
+
+    
+
+.card{
+    max-width: 700px;
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.box{
+    padding: 40px 40px;
+    color: white;
+    
+}
+.box h2{
+    margin-bottom: 20px;
+    font-size: 2em ;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+
+.box p{
+    margin-bottom: 60px;
+    line-height: 1.5 ;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+
+.btn:hover, .btn:focus{
+    background:none;
+}
+.btn{
+    background: white;
+    padding: 8px 15px;
+    border-radius: 100px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s ease;
+   
+}
+
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px ;
+    border-top-left-radius: 10px ;
+}
+.sedans .btn{
+    color: hsl(31, 77%, 52%);
+}
+.sedans .btn:hover{
+    color: white;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%)
+}
+.suvs .btn{
+    color: hsl(184, 100%, 22%)
+}
+.suvs .btn:hover{
+    color: white;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+.luxury .btn{
+    color: hsl(179, 100%, 13%)
+}
+.luxury .btn:hover{
+    color: white;
+}
+
+
+@media screen and (max-width: 765px){
+    .card{
+        max-width: 600px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    
+    }
+    .box{
+        padding: 40px 20px;
+        color: white;
+    }
+    .box h2{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+    
+    .box p{
+        margin-bottom: 60px;
+        line-height: 1.5 ;
+    }
+    
+    .btn{
+        background: white;
+        padding: 8px 15px;
+        border-radius: 100px;
+        display: inline-block
+    
+    }
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        max-width: 300px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    
+    }
+    .box{
+        padding: 40px 50px;
+        color: white;
+    }
+    .box p{
+        margin-bottom: 30px;
+        line-height: 1.5 ;
+    }
+
+    .sedans{
+        background-color: hsl(31, 77%, 52%);
+        border-bottom-left-radius: 0px ;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+    }
+    
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0px ;
+        border-bottom-right-radius: 10px ;
+        border-bottom-left-radius: 10px ;
+    }
+    .luxury .btn{
+        color: hsl(179, 100%, 13%)
+    }
+}
